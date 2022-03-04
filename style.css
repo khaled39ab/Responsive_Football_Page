@@ -267,6 +267,61 @@ section {
     transform: scale(1.2);
 }
 
+
+/*==================================================
+++++++++++++++++++++    Live    ++++++++++++++++++++
+====================================================*/
+
+.live-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .live-match {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .live-match h3 {
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 2px solid var(--border-tomato);
+  }
+  .live-wrapper iframe {
+    width: 95%;
+    max-width: 720px;
+    aspect-ratio: 16/9;
+  }
+
+
+
+  .gallery-wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 20px;
+  }
+  .gallery_-item {
+    box-shadow: 1px 1px 8px #00000055;
+    overflow: hidden;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+  .gallery-item img:hover {
+    transform: scale(1.2);
+  }
+  .wide {
+    grid-column: span 2;
+  }
 /*==================================================
 ++++++++++++++++++++   Footer   ++++++++++++++++++++
 ====================================================*/
@@ -327,9 +382,9 @@ footer {
     }
   
     /* ---------------------------*\
-                  Header
+                 Header
     \*----------------------------*/
-    
+
     /* --------------navbar--------------*/
     .menu-container {
       width: 40px;
@@ -348,14 +403,14 @@ footer {
       border-radius: 10px;
       padding: 10px;
     }
-    .menu__item {
+    .menu-item {
       margin-bottom: 4px;
       display: block;
       width: 100%;
       border-radius: 5px;
       background-color: var(--theme-main);
     }
-    .menu__item a {
+    .menu-item a {
       display: block;
       padding: 10px;
       color: var(--bg);
@@ -370,11 +425,11 @@ footer {
     }
     /* ----------------------------------------- */
   
-    .header__texts,
-    .header__bg {
+    .header-texts,
+    .header-bg {
       padding: 10px;
     }
-    .header__title {
+    .header-title {
       font-size: 36px;
       line-height: 50px;
       font-weight: bold;
@@ -388,11 +443,11 @@ footer {
     /* ---------------------------*\
              Highlights
     \*----------------------------*/
-    .highlight__texts,
-    .highlight__bg {
+    .highlight-texts,
+    .highlight-bg {
       padding: 10px;
     }
-    .highlight__title {
+    .highlight-title {
       font-size: 30px;
       font-weight: bold;
       line-height: 40px;
@@ -401,7 +456,7 @@ footer {
     /* ---------------------------*\
                   Footer
     \*----------------------------*/
-    .footer__wrapper img {
+    .footer-wrapper img {
       width: 300px;
     }
     .social {
@@ -419,18 +474,18 @@ footer {
                   Header
     \*----------------------------*/
   
-    .header__main {
+    .header-main {
       flex-direction: column;
       align-items: flex-start;
       padding: 20px 0;
     }
-    .header__texts,
-    .header__bg {
+    .header-texts,
+    .header-bg {
       width: 100%;
       max-width: 100%;
       padding: 20px 0;
     }
-    .header__title {
+    .header-title {
       font-size: 36px;
       line-height: 50px;
       font-weight: bold;
@@ -444,16 +499,16 @@ footer {
     /* ---------------------------*\
              Highlights
     \*----------------------------*/
-    .highlight__wrapper {
+    .highlight-wrapper {
       flex-direction: column;
       padding: 0;
     }
-    .highlight__texts,
-    .highlight__bg {
+    .highlight-texts,
+    .highlight-bg {
       max-width: 100%;
       padding: 30px 0;
     }
-    .highlight__title {
+    .highlight-title {
       font-size: 30px;
       font-weight: bold;
       line-height: 40px;
@@ -462,7 +517,7 @@ footer {
     /* ---------------------------*\
                   Footer
     \*----------------------------*/
-    .footer__wrapper img {
+    .footer-wrapper img {
       width: 250px;
     }
     .social {

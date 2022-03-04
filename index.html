@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Football</title>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/2a4cd010a3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <main>
+        <!-- =============================================================
+        ++++++++++++++++++++++       Navbar      +++++++++++++++++++++++++
+        ================================================================== -->
+        <header id="header" class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="menu-container">
+
+                        <label for="menu-toggle"><i class="fas fa-bars"></i></label>
+                        <input type="checkbox" checked="checked" hidden="hidden" name="menu-toggle" id="menu-toggle">
+                        <ul class="menu">
+                            <label for="menu-toggle"><i class="fas fa-times"></i></label>
+                            <li class="menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item"><a href="#players">Clubs</a></li>
+                            <li class="menu-item"><a href="#live">Live</a></li>
+                            <li class="menu-item"><a href="#gallery">Gallery</a></li>
+                            <li class="menu-item"><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="login.html" class="btn">
+                        <i class="fas fa-sign-in-alt"></i> &nbsp;Login
+                    </a>
+                </nav>
+            </div>
+
+            <div class="container">
+                <div class="header-main">
+                    <div class="header-texts">
+                        <h1 class="header-title">Conmebol <br>
+                            Copa America <br>
+                            2021
+                        </h1>
+                        <a href="#live" class="btn">Watch Live &nbsp;
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="header-bg">
+                        <img src="images/banner.png" alt="player with ball" class="player">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- ===================================================================
+        +++++++++++++++++++++++++       Players        +++++++++++++++++++++++++
+        ======================================================================== -->
+
+        <section id="players" class="player-section">
+            <div class="container">
+                <div class="players">
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-1.png" alt=""></div>
+                        <h3 class="player-name">Neymar Jr<br></h3>
+                        <p class="player-info">Neymar da Silva Santos Júnior, known as Neymar, is a Brazilian
+                            professional footballer who plays as a forward for Ligue 1&nbsp; club Paris Saint-Germain
+                            and the Brazil national team. He is widely regarded as one of the best players in the world.
+                        </p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-2.png" alt=""></div>
+                        <h3 class="player-name">Lionel Messi</h3>
+                        <p class="player-info">Lionel Andrés Messi is an Argentine professional footballer who plays as
+                            a forward or an attacking midfielder and captains the Argentina national team. He is
+                            currently a free agent, having played all his professional career</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-3.png" alt=""></div>
+                        <h3 class="player-name">Cristiano Ronaldo</h3>
+                        <p class="player-info">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese
+                            professional footballer who plays as a forward for Serie A club Juventus and captains the
+                            Portugal national team.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-4.png" alt=""></div>
+                        <h3 class="player-name">Paulo Dybala</h3>
+                        <p class="player-info">Paulo Exequiel Dybala is an Argentine professional footballer who plays
+                            as a forward for Serie A club Juventus and the Argentina national team.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-5.png" alt=""></div>
+                        <h3 class="player-name">Mesut Ozil</h3>
+                        <p class="player-info">Mesut Özil is a German professional footballer who plays as an attacking
+                            midfielder for Süper Lig club Fenerbahçe. Nicknamed "The Assist King", Özil is known for his
+                            technical skills, creativity, agility, and finesse.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-6.png" alt=""></div>
+                        <h3 class="player-name">Mauro Icardi</h3>
+                        <p class="player-info">Mauro Emanuel Icardi is an Argentine professional footballer who plays
+                            as a striker for Ligue 1 club Paris Saint-Germain
+                            and the Argentina national team.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-7.png" alt=""></div>
+                        <h3 class="player-name">Di Maria</h3>
+                        <p class="player-info">Ángel Fabián Di María is an Argentine professional footballer who plays
+                            for Ligue 1 club Paris Saint-Germain and the Argentina national team. He can play as either
+                            a winger or attacking midfielder</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-8.png" alt=""></div>
+                        <h3 class="player-name">Kylian Mbappé</h3>
+                        <p class="player-info">Kylian Mbappé Lottin is a French professional footballer who plays as a
+                            forward for Ligue 1 club Paris Saint-Germain and
+                            the France national team.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-9.png" alt=""></div>
+                        <h3 class="player-name">Mohamed Salah</h3>
+                        <p class="player-info">Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer
+                            who plays as a forward for Premier League club Liverpool and captains the Egypt national
+                            team. Considered one of the best players in the world, he is known for his finishing,
+                            dribbling, and speed</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-10.png" alt=""></div>
+                        <h3 class="player-name">Harry Kane</h3>
+                        <p class="player-info">Harry Edward Kane MBE is an English professional footballer who plays as
+                            a striker for Premier League club Tottenham Hotspur and captains the England national team.
+                            Kane is known for his prolific goalscoring record and ability to link play</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-11.png" alt=""></div>
+                        <h3 class="player-name">Kevin De Bruyne</h3>
+                        <p class="player-info">Kevin De Bruyne is a Belgian professional footballer who plays as a
+                            midfielder for Premier League club Manchester City
+                            and the Belgium national team.</p>
+                    </div>
+                    <div class="players-card">
+                        <div class="player-img"><img src="images/players/player-12.png" alt=""></div>
+                        <h3 class="player-name">Philippe Coutinho</h3>
+                        <p class="player-info">Philippe Coutinho Correia is a Brazilian professional footballer who
+                            plays as an attacking midfielder or winger for Spanish club Barcelona and the Brazil
+                            national team. He is known for his combination of vision, passing, dribbling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================================
+        +++++++++++++++++++++++++     All Highlights     +++++++++++++++++++++++++
+        ========================================================================== -->
+        <section class="highlight">
+            <div class="container">
+                <div class="highlight-wrapper">
+                    <div class="highlight-texts">
+                        <h2 class="highlight-title">
+                            All Highlights <br> Copa America 2021
+                        </h2>
+                        <p class="description">
+                            Follow the latest Copa America news with Sky Sports - breaking stories, transfer news, video
+                            highlights, latest results, rumours and player interviews.
+                        </p>
+                        <br><br>
+                        <a href="#gallery" class="btn">Key Moments &nbsp;
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="highlight-bg">
+                        <img src="images/match.png" alt="player with ball" class="player">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============================================================
+    +++++++++++++++++++++++++     Footer     +++++++++++++++++++++++++
+    ================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/Logo.png" alt=""></a>
+                </div>
+                <div class="social">
+                    <a href="instagram.com">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="facebook.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="youtube.com">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <p class="copyright">
+                    Copyright &copy; 2022 Football
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
